@@ -1,37 +1,14 @@
-2024:
-
-Janvier:   24674h 424€
-Février:   22503h 1322€
-Mars:      43918h 1301€
-Avril:     35980h 109€
-Mai:       24198h 770€
-Juin:      14718h 1082€
-Juillet:   21389h 297€
-Aout:      6526h -136€
-Septembre: 12610h 399€
-Octobre:   30941h 462€
-Novembre:  15791h 1292€
-Decembre:  18909h 757€
-
-
-
-
-
-
-
-
-
 2025:
-
-Janvier:   23744h -1005
-Février: 
-Mars:
-Avril:
-Mai:
-Juin:
-Juillet:
-Aout:
-Septembre:
-Octobre:
-Novembre:
-Decembre:
+  janvier:
+    sessions:
+      - date: "2025-01-05"
+        stakes: "NL200"
+        profit: "+500€"
+      - date: "2025-01-12"
+        stakes: "NL500"
+        profit: "-300€"
+  février:
+    sessions:
+      - date: "2025-02-03"
+        stakes: "NL200"
+        profit: "+200€"
