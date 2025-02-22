@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Résultats
+permalink: /results.html
 ---
 
 # Résultats de Poker
@@ -10,18 +11,22 @@ title: Résultats
   {% for month in year[1] %}
     ### {{ month[0] | capitalize }}
     <table>
-      <tr>
-        <th>Date</th>
-        <th>Stakes</th>
-        <th>Profit</th>
-      </tr>
-      {% for session in month[1].sessions %}
+      <thead>
         <tr>
-          <td>{{ session.date }}</td>
-          <td>{{ session.stakes }}</td>
-          <td>{{ session.profit }}</td>
+          <th>Date</th>
+          <th>Stakes</th>
+          <th>Profit</th>
         </tr>
-      {% endfor %}
+      </thead>
+      <tbody>
+        {% for session in month[1].sessions %}
+          <tr>
+            <td>{{ session.date }}</td>
+            <td>{{ session.stakes }}</td>
+            <td>{{ session.profit }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
     </table>
   {% endfor %}
 {% endfor %}
